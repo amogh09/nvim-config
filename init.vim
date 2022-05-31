@@ -1,7 +1,7 @@
 " General settings
 set number
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set encoding=utf-8
 
@@ -105,6 +105,10 @@ nmap <leader>rn <Plug>(coc-rename)
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+
+" Format the whole buffer
+command! -nargs=0 Format :call CocActionAsync('format')
+nnoremap <leader>ff :<C-u>Format<CR>
 
 " Applying codeAction to the selected region.
 " Example: `<leader>aap` for current paragraph
