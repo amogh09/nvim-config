@@ -79,6 +79,9 @@ else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
 
+" Use <cr> to confirm completion
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
+
 " GoTo code navigation.
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
