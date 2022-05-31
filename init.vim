@@ -7,9 +7,7 @@ set encoding=utf-8
 
 function! PackInit() abort
   packadd minpac
-
   call minpac#init()
-  call minpac#add('k-takata/minpac', {'type': 'opt'})
 
   call minpac#add('k-takata/minpac', {'type': 'opt'})
   call minpac#add('tpope/vim-unimpaired')
