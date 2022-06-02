@@ -5,6 +5,10 @@ set shiftwidth=2
 set expandtab
 set encoding=utf-8
 
+" Quickly insert an empty new line without entering insert mode
+nnoremap <Leader>o o<Esc>
+nnoremap <Leader>O O<Esc>
+
 function! PackInit() abort
   packadd minpac
   call minpac#init()
@@ -14,6 +18,7 @@ function! PackInit() abort
   call minpac#add('junegunn/fzf')
   call minpac#add('tpope/vim-dispatch')
   call minpac#add('neoclide/coc.nvim', {'branch': 'release'})
+  call minpac#add('neoclide/coc-java')
   call minpac#add('rafi/awesome-vim-colorschemes')
   call minpac#add('vim-test/vim-test')
   call minpac#add('vim-airline/vim-airline')
