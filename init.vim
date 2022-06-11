@@ -153,3 +153,6 @@ if has('nvim')
   tnoremap <M-k> <c-\><c-n><c-w>k
   tnoremap <M-l> <c-\><c-n><c-w>l
 endif
+
+" Close buffer without closing its window 
+nnoremap <leader>q :bp<bar>sp<bar>bn<bar>bd!<CR>
