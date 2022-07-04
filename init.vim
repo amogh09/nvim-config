@@ -1,9 +1,5 @@
 " General settings
 set number
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set encoding=utf-8
 
 " Quickly insert an empty new line without entering insert mode
 nnoremap <Leader>o o<Esc>
@@ -24,6 +20,8 @@ function! PackInit() abort
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('preservim/nerdtree')
   call minpac#add('tpope/vim-eunuch')
+  call minpac#add('editorconfig/editorconfig-vim')
+  call minpac#add('tpope/vim-commentary')
 endfunction
 
 command! PackUpdate source $MYVIMRC | call PackInit() | call minpac#update()
