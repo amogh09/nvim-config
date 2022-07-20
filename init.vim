@@ -1,5 +1,6 @@
 " General settings
 set number
+set history=2000
 
 " Quickly insert an empty new line without entering insert mode
 nnoremap <Leader>o o<Esc>
